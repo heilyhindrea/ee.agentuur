@@ -1,51 +1,14 @@
-/* 
-    Document   : agentuur_style
-    Created on : 11.03.2012, 0:32:55
-    Author     : Heily
-    Description:
-        Purpose of the stylesheet follows.
-*/
-/* 
-	Resets defualt browser settings
-	reset.css
-*/
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline; }
-:focus { outline:0; }
-a:active { outline:none; }
-body { line-height:1; color:black; background:white; }
-ol,ul { list-style:none; }
-table { border-collapse:separate; border-spacing:0; }
-caption,th,td { text-align:left; font-weight:normal; }
-blockquote:before,blockquote:after,q:before,q:after { content:""; }
-blockquote,q { quotes:"" ""; }
-
 body {
    font-family: Georgia,Arial,Verdana;
    font-size: 15px;
    background: aliceblue;
    position: relative;
-  
-   
-   
 }
+
 a {
     text-decoration: none;
     color: black;
 }
-
-#nav, #friends{
-    margin-top: 20px;
-}
-
-/*PS ma pean ütlema li elemendil endal et nad paneks ennas ritta*/
-#nav li
-{
-   float: left; 
-   padding-right: 20px;
-}
-
-
-
 
 header{
     margin-top: 8%;
@@ -59,7 +22,7 @@ header #logo{
    
 }
 
-header #lan ul li, #friends li {
+header #lan{
    float: right;
    padding-left: 20px;
 }
@@ -70,7 +33,7 @@ header #lan{
   
 }
 
-header #lan ul li{
+header #lan{
     padding-top: 30px;
 }
 
@@ -79,12 +42,6 @@ header #lan a{
 }
 
 
-#wrap{
-    position: relative;
-    margin: 0% 10%;
-   
-    
-}
 #content{
    
     border-bottom: medium solid #e3e3e3;
@@ -97,56 +54,12 @@ header #lan a{
     
 }
 
-#slides_content{
-    /*Selleks et oleks lai riba kuhu sisse mu pildid üksteise kõrvale mahuksid*/
-    width: 99999px;
-    position: relative;
-    
-  
-   
-}
-
-#slides_content li {
-    float: left;
-    background:gold;
-    padding-left: 20px;
-    padding-top: 20px;
-     
-       
-}
-#slides_content li article{
-    width: 500px;
-    line-height:1.4;
-}
-
-#slides_content li p{
-    font-size: 20px;
-    
-}
-#slides_content li.first, #slides_content li.third{
-    background: saddlebrown;
-    color:wheat;
+#nav{
+    margin-top: 20px;
 }
 
 
-.next {
-    visibility: hidden;
-    position: absolute;
-}
 
-.prev {
-   visibility: hidden; 
-   position: absolute;
-  
-}
-
-.arrow-down {
-        height: 15px;
-	background-image: url('img/triangle.png');
-        background-repeat: repeat-x;
-        padding-bottom: 5px;
-       
-}
 
 
 

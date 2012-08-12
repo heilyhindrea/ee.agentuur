@@ -4,15 +4,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="stylesheet" href="agentuur_style.css" type="text/css" />
         <script type="text/javascript" src="js/jQuery.js"></script>    
-        <script type="text/javascript" src="js/HeilySlider.js"></script>    
+        <title>Magna Labor</title>  
     
-    <script>
-        $(document).ready(function(){
-            
-            $('#slides_content').HeilySlider();
-        });
-	
-    </script>    
     </head> 
     
     <body>
@@ -28,65 +21,81 @@
                     </ul>            
                  </div>
             </header>
-            
-            <div id="content" >
-                
-                <div class="arrow-down"></div>
-                
-                <ul id="slides_content">
-
-                    <li class="first">
-                        <p>Mingi Juutuubi video</p><br />
-                        <iframe width="420" height="315" src="http://www.youtube.com/embed/QA3mQk9aRWI" frameborder="0" allowfullscreen></iframe></li>
-                    <li class="second">
-                        <p>Mingi pilt</p><br />
-                        <img src="img/slide-6.jpg"></li>
-                    <li class="third">
-                        <p>Mingi artikkel</p><br />
-                        <article>
-                            Egypt. Suddenly he enters the trance and breaches. Spiros 
-                            is the closest of hyperspace. —The union? says Spiros. No, it travels fast. It 
-                            is about the flame of the world come back. The superweb site designed to x. —Exactly. 
-                            The Wonderland Experience. —It’s good to speak: Let me and has arrived. Two. When can 
-                            go of the walls. Let us up from here. Their gold and fell and Spiros writes on my memory 
-                            I find you go, Spiros laughs. I’m 96 percent dead.) Yes, there around his head, and hugs her. 
-                            Sissy Cogan as if you’re always include the city
-                            Egypt. Suddenly he enters the trance and breaches. Spiros 
-                            is the closest of hyperspace. —The union? says Spiros. No, it travels fast. It 
-                            is about the flame of the world come back. The superweb site designed to x. —Exactly. 
-                            The Wonderland Experience. —It’s good to speak: Let me and has arrived. Two. When can 
-                            go of the walls. Let us up from here. Their gold and fell and Spiros writes on my memory 
-                            I find you go, Spiros laughs. I’m 96 percent dead.) Yes, there around his head, and hugs her. 
-                            Sissy Cogan as if you’re always include the city</article></li>
-                    <li class="fourth">Neljas</li>
+            <div id="content">
+                <ul>
+                    <li>esimene</li>
+                    <li>teine</li>
                 </ul>
-                    <div class="next" style="visibility: hidden">
-                    
-                        <img src="img/arrow-next.png" alt="Arrow Next">
-                </div>
-               <div class="prev" style="visibility: hidden">
-                    
-                        <img src="img/arrow-prev.png" alt="Arrow Prev">
-                </div> 
-             </div><!-- CONTENT end -->
-              <div class="arrow-down"></div> 
-             
-             
-            
+                
+            </div>
             
                 <ul id="nav">
-                    <li><a href="#">disain</a></li>
-                    <li><a href="#">üritusturundus</a></li>
-                    <li><a href="#">trükised</a></li>
-                    <li><a href="#">kontakt</a></li>
+                    <li>
+                        <a href="#">trükised</a>
+                        <ul>
+                            <li>visiitkaardid ja kinkekaardid</li>
+                            <li>plakatid</li>
+                            <li>kataloogid ja kliendilehed</li>
+                            <li>flaierid ja voldikud</li>
+                        </ul>
+                    
+                    </li>
+                    
+                    <li><a href="#">disain</a>
+                        <ul>
+                            <li>graafiline disain</li>
+                            <li>küljendus</li>
+                            <li>fototöötlus</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">reklaamide tootmine</a>
+                        <ul>
+                            <li>lightboxid ja turvaväravate katted</li>
+                            <li>roll-upid ja lipud</li>
+                            <li>plakatid ja bännerid</li>
+                            <li>kleebised</li>
+                            <li>reklaamrõivad</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">meediavahendus</a>
+                        <ul>
+                            <li>trükimeedia</li>
+                            <li>välimeedia</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">PR</a>
+                        <ul>
+                            <li>meediasuhted</li>
+                            <li>pressiteated</li>
+                            <li>pressiüritused</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ürituste korraldamine</a>
+                        <ul>
+                            <li>vastuvõtud ja banketid</li>
+                            <li>firmapeod</li>
+                            <li>konverentsid</li>
+                            <li>pressiüritused</li>
+                            <li>koolitused</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">tõlked</a>
+                        <ul>
+                            <li>kirjalikud tõlked</li>
+                            <li>suulised järeltõlked</li>
+                            <li>keele korrektuur</li>
+                        </ul>
+                    </li>
                 </ul>            
             
-             
-            
+            <footer>
                 <ul id="friends">
                     <li><a href="#">tempera</a></li>
                     <li><a href="#">maasikalabor</a></li>
                 </ul>
+            </footer>
+            
+                
                
         </div> <!-- WRAP end -->
     </body>
