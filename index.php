@@ -22,10 +22,6 @@
                  </div>
             </header>
             <div id="content">
-                <ul>
-                    <li>esimene</li>
-                    <li>teine</li>
-                </ul>
                 
             </div>
             

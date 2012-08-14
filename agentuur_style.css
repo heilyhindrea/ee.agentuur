@@ -2,7 +2,7 @@ body {
    font-family: Georgia,Arial,Verdana;
    font-size: 15px;
    background: aliceblue;
-   position: relative;
+  
 }
 
 a {
@@ -11,31 +11,41 @@ a {
 }
 
 header{
-    margin-top: 8%;
+   
     height: 50px;
+    
     
 }
 header #logo{
     
     float: left;
-    font-size: 40px;
+    margin-left: 100px;
    
+  
+
 }
 
-header #lan{
-   float: right;
-   padding-left: 20px;
-}
+
 
 header #lan{
+  float: right;
   text-transform: uppercase;    
   font-weight: bold;
+  margin-right:100px; 
+  
+  
   
 }
 
-header #lan{
-    padding-top: 30px;
+#lan ul{
+    list-style: none;
+    
 }
+
+#lan ul li{
+    float: left;
+}
+
 
 header #lan a{
     color: #999999;  
@@ -43,19 +53,48 @@ header #lan a{
 
 
 #content{
-   
+    clear:both;
     border-bottom: medium solid #e3e3e3;
     border-top: medium solid #e3e3e3;
     overflow: hidden;
-    padding: 0px 0px 10px 0px;
-    min-height: 300px;
-    min-width: 1000px;
+    /*padding: 0px 0px 10px 0px;*/
+    min-height: 450px;
+    min-width: 800px;
     max-height: 800px;
+    margin: 0px 100px 0px 100px;
     
 }
 
 #nav{
     margin-top: 20px;
+    list-style: none;
+    line-height: 30px;
+    padding-left: 0;
+    margin: 0px 50px 0px 150px;
+    
+}
+#nav li{
+    float: left;
+    padding-right: 25px;
+   
+}
+
+#nav li a{
+     font-weight: bold;
+}
+
+#nav li ul li{
+    float: none;
+    
+}
+
+#nav li ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+footer {
+    clear: left;
 }
 
 
