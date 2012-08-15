@@ -26,6 +26,33 @@
             </div>
             
                 <ul id="nav">
+                    <li><a href="#">meediavahendus</a>
+                        <ul>
+                            <li>trükimeedia</li>
+                            <li>välimeedia</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">disain</a>
+                        <ul>
+                            <li>graafiline disain</li>
+                            <li>küljendus</li>
+                            <li>fototöötlus</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">PR</a>
+                        <ul>
+                            <li>meediasuhted</li>
+                            <li>pressiteated</li>
+                            <li>pressiüritused</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">tõlked</a>
+                        <ul>
+                            <li>kirjalikud tõlked</li>
+                            <li>suulised järeltõlked</li>
+                            <li>keele korrektuur</li>
+                        </ul>
+                    </li>
                     <li>
                         <a href="#">trükised</a>
                         <ul>
@@ -37,13 +64,7 @@
                     
                     </li>
                     
-                    <li><a href="#">disain</a>
-                        <ul>
-                            <li>graafiline disain</li>
-                            <li>küljendus</li>
-                            <li>fototöötlus</li>
-                        </ul>
-                    </li>
+                    
                     <li><a href="#">reklaamide tootmine</a>
                         <ul>
                             <li>lightboxid ja turvaväravate katted</li>
@@ -53,19 +74,8 @@
                             <li>reklaamrõivad</li>
                         </ul>
                     </li>
-                    <li><a href="#">meediavahendus</a>
-                        <ul>
-                            <li>trükimeedia</li>
-                            <li>välimeedia</li>
-                        </ul>
-                    </li>
-                    <li><a href="#">PR</a>
-                        <ul>
-                            <li>meediasuhted</li>
-                            <li>pressiteated</li>
-                            <li>pressiüritused</li>
-                        </ul>
-                    </li>
+                    
+                    
                     <li><a href="#">ürituste korraldamine</a>
                         <ul>
                             <li>vastuvõtud ja banketid</li>
@@ -75,21 +85,42 @@
                             <li>koolitused</li>
                         </ul>
                     </li>
-                    <li><a href="#">tõlked</a>
-                        <ul>
-                            <li>kirjalikud tõlked</li>
-                            <li>suulised järeltõlked</li>
-                            <li>keele korrektuur</li>
-                        </ul>
-                    </li>
+                    
                 </ul>            
             
             <footer>
-                <ul id="friends">
-                    <li><a href="#">tempera</a></li>
-                    <li><a href="#">maasikalabor</a></li>
-                </ul>
+                <table>
+                    <tr>
+                        <td><h3 id="lemme">pilt</h3></td>
+                        <td> <address>
+                            Lemme Leima<br />
+                            Projektijuht<br />
+                            5565432<br />
+                            meedia@magnalabor.ee<br /><br /> 
+
+                            Magna Labor OÜ<br />
+                            Madara 27<br />
+                            Tallinn 
+                            </address>
+                        </td>
+                        <td>
+                           <label>sõbrad</label>
+                
+                            <ul id="friends">
+                                <li><a href="#">tempera</a></li>
+                                <li><a href="#">maasikalabor</a></li>
+                            </ul> 
+                        </td>
+                    </tr>
+                </table>
+               
+                
+               
+                    
+                
+                
             </footer>
+            <span></span>
             
                 
                

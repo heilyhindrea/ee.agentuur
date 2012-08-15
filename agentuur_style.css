@@ -6,7 +6,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+    /*text-decoration: none;*/
     color: black;
 }
 
@@ -58,43 +58,77 @@ header #lan a{
     border-top: medium solid #e3e3e3;
     overflow: hidden;
     /*padding: 0px 0px 10px 0px;*/
-    min-height: 450px;
     min-width: 800px;
+    min-height: 450px;
     max-height: 800px;
-    margin: 0px 100px 0px 100px;
+   
+    
+    
     
 }
+
+
 
 #nav{
     margin-top: 20px;
     list-style: none;
-    line-height: 30px;
+    /* line-height: 30px;*/
     padding-left: 0;
-    margin: 0px 50px 0px 150px;
+    margin: 0px 70px 0px 130px;
     
 }
 #nav li{
     float: left;
-    padding-right: 25px;
+    padding-right: 20px;
+    
    
 }
 
 #nav li a{
      font-weight: bold;
+     line-height: 35px;
 }
 
 #nav li ul li{
     float: none;
+    
+    
     
 }
 
 #nav li ul{
     list-style: none;
     padding-left: 0;
+    line-height: 25px;
+    font-size: 11px;
 }
 
+footer, #content{
+    
+    margin: 0px 100px 0px 100px;
+    
+    
+}
+
+
 footer {
-    clear: left;
+    clear: both;
+    border-bottom: thin solid #C4C2C3;
+    border-top: thin solid #C4C2C3;
+    background-color: #e3e3e3;
+     
+}
+
+#lemme{
+    height: 200px;
+    background: url("img/lemme.jpg");
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+#friends {
+    list-style: none;
+    
+
 }
 
 
