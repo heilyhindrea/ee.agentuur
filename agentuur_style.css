@@ -106,6 +106,7 @@ header #lan a{
 footer, #content{
     
     margin: 0px 100px 0px 100px;
+    width: 1200px;
     
     
 }
@@ -116,6 +117,8 @@ footer {
     border-bottom: thin solid #C4C2C3;
     border-top: thin solid #C4C2C3;
     background-color: #e3e3e3;
+    min-height: 300px;
+    
      
 }
 
@@ -124,11 +127,27 @@ footer {
     background: url("img/lemme.jpg");
     background-repeat: no-repeat;
     text-indent: -9999px;
+    width: 200px;
+    float:left;
 }
 #friends {
     list-style: none;
+    width: 500px;
+    float:left;
+    padding-left: 0;
     
 
+}
+
+lable{
+    float; left;
+}
+address{
+    
+    width: 500px;
+    float:left;
+    
+    
 }
 
 

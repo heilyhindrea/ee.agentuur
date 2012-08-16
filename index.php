@@ -89,10 +89,8 @@
                 </ul>            
             
             <footer>
-                <table>
-                    <tr>
-                        <td><h3 id="lemme">pilt</h3></td>
-                        <td> <address>
+                <h3 id="lemme">pilt</h3>
+                <address>
                             Lemme Leima<br />
                             Projektijuht<br />
                             5565432<br />
@@ -102,26 +100,16 @@
                             Madara 27<br />
                             Tallinn 
                             </address>
-                        </td>
-                        <td>
+                       
                            <label>sõbrad</label>
                 
                             <ul id="friends">
                                 <li><a href="#">tempera</a></li>
                                 <li><a href="#">maasikalabor</a></li>
                             </ul> 
-                        </td>
-                    </tr>
-                </table>
-               
-                
-               
-                    
-                
+                       
                 
             </footer>
-            <span></span>
-            
                 
                
         </div> <!-- WRAP end -->
