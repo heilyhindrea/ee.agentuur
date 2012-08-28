@@ -1,10 +1,20 @@
+html{
+    height: 100%;
+}
 body {
+   height: 100%;
    font-family: Georgia,Arial,Verdana;
-   font-size: 15px;
+   font-size: 0.9375em;
    background: aliceblue;
+   margin-left: 5%;
+   margin-right: 5%; 
+
   
 }
 
+#wrap{
+    height: 100%;
+}
 a {
     text-decoration: none;
     color: black;
@@ -12,14 +22,15 @@ a {
 
 header{
    
-    height: 50px;
+    height: 5.035%;
     
     
 }
 header #logo{
     
     float: left;
-    margin-left: 100px;
+    margin-left: 6%;
+   
    
   
 
@@ -31,7 +42,8 @@ header #lan{
   float: right;
   text-transform: uppercase;    
   font-weight: bold;
-  margin-right:100px; 
+  margin-right: 6%; 
+  
   
   
   
@@ -57,25 +69,23 @@ header #lan a{
     border-bottom: medium solid #e3e3e3;
     border-top: medium solid #e3e3e3;
     overflow: hidden;
-    /*padding: 0px 0px 10px 0px;*/
-    min-height: 450px;
-    min-width: 800px;
-    max-height: 800px;
-    margin: 0px 100px 0px 100px;
+    margin: 0% 6% 0% 6%;
+    height: 40%;
     
 }
 
 #nav{
-    margin-top: 20px;
+   
     list-style: none;
-    line-height: 30px;
+    line-height: 1.875em;
     padding-left: 0;
-    margin: 0px 50px 0px 150px;
+    margin: 0% 6% 0% 6%;
+    
     
 }
 #nav li{
     float: left;
-    padding-right: 25px;
+    padding-right: 1px;
    
 }
 
