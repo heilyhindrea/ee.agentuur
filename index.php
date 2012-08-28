@@ -65,17 +65,6 @@
                     </li>
                     
                     
-                    <li><a href="#">reklaamide tootmine</a>
-                        <ul>
-                            <li>lightboxid ja turvaväravate katted</li>
-                            <li>roll-upid ja lipud</li>
-                            <li>plakatid ja bännerid</li>
-                            <li>kleebised</li>
-                            <li>reklaamrõivad</li>
-                        </ul>
-                    </li>
-                    
-                    
                     <li><a href="#">ürituste korraldamine</a>
                         <ul>
                             <li>vastuvõtud ja banketid</li>
@@ -83,6 +72,15 @@
                             <li>konverentsid</li>
                             <li>pressiüritused</li>
                             <li>koolitused</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">reklaamide tootmine</a>
+                        <ul>
+                            <li>lightboxid ja turvaväravate katted</li>
+                            <li>roll-upid ja lipud</li>
+                            <li>plakatid ja bännerid</li>
+                            <li>kleebised</li>
+                            <li>reklaamrõivad</li>
                         </ul>
                     </li>
                     
