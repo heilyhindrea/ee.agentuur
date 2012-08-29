@@ -3,6 +3,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="stylesheet" href="agentuur_style.css" type="text/css" />
+        <link rel="stylesheet" href="cssarrow.css" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="js/jQuery.js"></script>    
         <title>Magna Labor</title>  
     
@@ -22,7 +24,7 @@
                  </div>
             </header>
             <div id="content">
-                
+                <img src="http://placehold.it/200x200">
             </div>
             
                 <ul id="nav">
@@ -39,7 +41,7 @@
                             <li>fototöötlus</li>
                         </ul>
                     </li>
-                    <li><a href="#">PR</a>
+                    <li><a href="#">pr</a>
                         <ul>
                             <li>meediasuhted</li>
                             <li>pressiteated</li>
@@ -53,10 +55,34 @@
                             <li>keele korrektuur</li>
                         </ul>
                     </li>
-                    <li>
+              
+                    
+                    
+                    <li><a href="#">üritused</a>
+                        <ul>
+                            <li>vastuvõtud</li>
+                            <li>banketid</li>
+                            <li>firmapeod</li>
+                            <li>konverentsid</li>
+                            <li>pressiüritused</li>
+                            <li>koolitused</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">tootmine</a>
+                        <ul>
+                            <li>lightboxid</li>
+                            <li>turvaväravate katted</li>
+                            <li>roll-upid ja lipud</li>
+                            <li>plakatid ja bännerid</li>
+                            <li>kleebised</li>
+                            <li>reklaamrõivad</li>
+                        </ul>
+                    </li>
+                          <li>
                         <a href="#">trükised</a>
                         <ul>
-                            <li>visiitkaardid ja kinkekaardid</li>
+                            <li>visiitkaardid<li>
+                            <li>kinkekaardid</li>
                             <li>plakatid</li>
                             <li>kataloogid ja kliendilehed</li>
                             <li>flaierid ja voldikud</li>
@@ -64,30 +90,12 @@
                     
                     </li>
                     
-                    
-                    <li><a href="#">ürituste korraldamine</a>
-                        <ul>
-                            <li>vastuvõtud ja banketid</li>
-                            <li>firmapeod</li>
-                            <li>konverentsid</li>
-                            <li>pressiüritused</li>
-                            <li>koolitused</li>
-                        </ul>
-                    </li>
-                    <li><a href="#">reklaamide tootmine</a>
-                        <ul>
-                            <li>lightboxid ja turvaväravate katted</li>
-                            <li>roll-upid ja lipud</li>
-                            <li>plakatid ja bännerid</li>
-                            <li>kleebised</li>
-                            <li>reklaamrõivad</li>
-                        </ul>
-                    </li>
-                    
                 </ul>            
-            
-            <footer>
-                <h3 id="lemme">pilt</h3>
+             <span class="clearfix"></span>
+              <div class="arrow_box logo" style="margin: 3% 30% 0% 30%; padding: 1% 0% 1% 0%;">kontakt</div>
+             <footer>
+                
+                <h3 id="picture">pilt</h3>
                 <address>
                             Lemme Leima<br />
                             Projektijuht<br />
@@ -99,16 +107,16 @@
                             Tallinn 
                             </address>
                        
-                           <label>sõbrad</label>
-                
-                            <ul id="friends">
+                           <ul id="friends">
+                                <li>sõbrad</li>
                                 <li><a href="#">tempera</a></li>
                                 <li><a href="#">maasikalabor</a></li>
                             </ul> 
+                            <span class="clearfix"></span>
                        
                 
             </footer>
-                
+           <span class="clearfix"></span>
                
         </div> <!-- WRAP end -->
     </body>

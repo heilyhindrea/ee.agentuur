@@ -1,0 +1,40 @@
+.arrow_box {
+	position: relative;
+	background: #de188f;
+	border: 4px solid #f5dded;
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(222, 24, 143, 0);
+	border-top-color: #de188f;
+	border-width: 20px;
+	left: 50%;
+	margin-left: -20px;
+}
+.arrow_box:before {
+	border-color: rgba(245, 221, 237, 0);
+	border-top-color: #f5dded;
+	border-width: 26px;
+	left: 50%;
+	margin-left: -26px;
+}
+
+.logo {
+    font-family: 'Merienda+One';
+    color: #DDF8C6;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}

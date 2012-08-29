@@ -5,9 +5,8 @@ body {
    height: 100%;
    font-family: Georgia,Arial,Verdana;
    font-size: 0.9375em;
-   background: aliceblue;
-   margin-left: 5%;
-   margin-right: 5%; 
+   background: antiquewhite;
+   margin: auto;
 
   
 }
@@ -31,12 +30,8 @@ header #logo{
     float: left;
     margin-left: 6%;
    
-   
-  
 
 }
-
-
 
 header #lan{
   float: right;
@@ -49,7 +44,7 @@ header #lan{
   
 }
 
-#lan ul{
+#lan ul, #friends{
     list-style: none;
     
 }
@@ -66,11 +61,17 @@ header #lan a{
 
 #content{
     clear:both;
-    border-bottom: medium solid #e3e3e3;
-    border-top: medium solid #e3e3e3;
+    border-bottom: medium solid #de188f;
+    border-top: medium solid #de188f;
     overflow: hidden;
     margin: 0% 6% 0% 6%;
-    height: 40%;
+    height: 45%;
+    
+}
+
+#content img{
+    width: 30%;
+    height: 101%;
     
 }
 
@@ -79,14 +80,18 @@ header #lan a{
     list-style: none;
     line-height: 1.875em;
     padding-left: 0;
-    margin: 0% 6% 0% 6%;
+    margin: 1% 6% 0% 6%;
     
     
 }
 #nav li{
     float: left;
-    padding-right: 18px;
+    padding-right: 1.5em;
    
+}
+
+#nav li a:hover{
+    background: #de188f;
 }
 
 #nav li a{
@@ -105,11 +110,47 @@ header #lan a{
 
 footer {
     clear: left;
+    margin:2% 6% 0% 6%;
+    height: 25%;
+    background-color: lightgray;
+    
+    
 }
 
+#picture{
+    clear: both;
+    background: url("http://placehold.it/200x200");
+    text-indent: -9999px;
+    width: 16%;
+    height: 100%;
+    float:left;
+    margin: 0;
+}
 
+address{
+    float:left;
+    padding-right: 10%;
+    margin:2% 0% 2% 2%;
+}
 
+#friends{
+    padding:2% 0% 2% 2%;
+}
 
+label{
+    padding-top: 10px;
+}
 
-
-
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
