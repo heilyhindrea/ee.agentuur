@@ -19,44 +19,48 @@ a {
     color: black;
 }
 
+
+
 header{
-   
-    height: 5.035%;
-    
-    
-}
-header #logo{
-    
-    float: left;
-    margin-left: 6%;
-   
 
+   
 }
-
-header #lan{
-  float: right;
+#lan{
+  display: inline;
   text-transform: uppercase;    
   font-weight: bold;
-  margin-right: 6%; 
+  margin:0;
+  padding:0;
+  position: relative;
+  left: 73%;
   
-  
-  
-  
+
 }
 
-#lan ul, #friends{
+#lan a{
+    color: #999999;  
+}
+#logo{
+    
+    
+    display: inline;
+    margin:0;
+    margin-left: 6%;
+   
+     
+   }
+
+#lan, #friends{
     list-style: none;
     
 }
 
-#lan ul li{
-    float: left;
+#lan li{
+    display: inline;
 }
 
 
-header #lan a{
-    color: #999999;  
-}
+
 
 
 #content{
