@@ -60,8 +60,7 @@
                     
                     <li><a href="#">üritused</a>
                         <ul>
-                            <li>vastuvõtud</li>
-                            <li>banketid</li>
+                            <li>vastuvõtud ja banketid</li>
                             <li>firmapeod</li>
                             <li>konverentsid</li>
                             <li>pressiüritused</li>
