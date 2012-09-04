@@ -4,12 +4,26 @@
     <title>Äge agentuur</title>
     <!-- Bootstrap -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-     <script src="js/bootstrap.min.js">
-         $(document).ready(function(){
-             $('header img').tooltip();
+     <script>
+         $(document).ready(function(){ 
+            
+            $('.nav li').click(function() {
+                
+                $('.nav li').removeClass('active');
+                
+                    var $this = $(this);
+                        if (!$this.hasClass('active')) {
+                            $this.addClass('active');
+                        }
+                      
+            });
          });
+           
          
      </script>
      <style>
@@ -70,8 +84,8 @@
           <img  src="http://placehold.it/400x100" alt="Agentuuri logo" title="Agentuuri logo ja slogan"/>
           
           <ul id ="lan" class="nav nav-pills">
-            <li class="active"><a href="#">est</a></li>
-            <li><a href="#">eng</a></li>
+            <li class="active"><a href="#est">eesti keel</a></li>
+            <li><a href="#en">english</a></li>
           </ul>
           
       </header>
@@ -107,10 +121,10 @@
                  
                  <ul class="nav nav-list">
                         
-                      <li class="nav-header"><a href="#">pr</a></li>
-                      <li><a href="#">meediasuhted</a></li>
-                      <li><a href="#">pressiteated</a></li>
-                      <li><a href="#">pressiüritused</a></li>
+                      <li class="nav-header"><a href="#pr">pr</a></li>
+                      <li><a href="#meediasuhted">meediasuhted</a></li>
+                      <li><a href="#pressideated">pressiteated</a></li>
+                      <li><a href="#pressiuritused">pressiüritused</a></li>
                         
                 </ul>
              
@@ -119,10 +133,10 @@
             <div class="span2">
                 
                 <ul class="nav nav-list">
-                    <li class="nav-header"><a href="#">disain</a></li>
-                    <li class="active"><a href="#">graafiline disain</a></li>
-                    <li><a href="#">küljendus</a></li>
-                    <li><a href="#">fototöötlus</a></li>
+                    <li class="nav-header"><a href="#disain">disain</a></li>
+                    <li class="active"><a href="#graafiline_disain">graafiline disain</a></li>
+                    <li><a href="#kuljendus">küljendus</a></li>
+                    <li><a href="#fototootlus">fototöötlus</a></li>
                     
                 </ul>
             </div>
@@ -130,46 +144,46 @@
              <div class="span2">
                 
                 <ul class="nav nav-list">
-                    <li class="nav-header"><a href="#">tõlked</a></li>
-                    <li><a href="#">kirjalikud tõlked</a></li>
-                    <li><a href="#">suulised järeltõlked</a></li>
-                    <li><a href="#">keele korrektuur</a></li>
+                    <li class="nav-header"><a href="#tolked">tõlked</a></li>
+                    <li><a href="#kirjalikud_tolked">kirjalikud tõlked</a></li>
+                    <li><a href="#suulised_jareltolked">suulised järeltõlked</a></li>
+                    <li><a href="#keelekorrelktuur">keelekorrektuur</a></li>
                 </ul>
             </div>
            
              <div class="span2">
                 
                 <ul class="nav nav-list">
-                    <li class="nav-header"><a href="#">üitused</a></li>
-                    <li><a href="#">vastuvõtud</a></li>
-                    <li><a href="#">banketid</a></li>
-                    <li><a href="#">firmapeod</a></li>
-                    <li><a href="#">konverentsid</a></li>
-                    <li><a href="#">pressiüritused</a></li>
-                    <li><a href="#">koolitused</a></li>
+                    <li class="nav-header"><a href="#uritused">üitused</a></li>
+                    <li><a href="#vastuvotud">vastuvõtud</a></li>
+                    <li><a href="#banketid">banketid</a></li>
+                    <li><a href="#firmapeod">firmapeod</a></li>
+                    <li><a href="#konverentsid">konverentsid</a></li>
+                    <li><a href="#pressiuritused">pressiüritused</a></li>
+                    <li><a href="#koolitused">koolitused</a></li>
                 </ul>
             </div>
              <div class="span2">
                
                 <ul class="nav nav-list">
-                    <li class="nav-header"><a href="#">tootmine</a></li>
-                    <li><a href="#">lightboxid</a></li>
-                    <li><a href="#">turvaväravate katted</a></li>
-                    <li><a href="#">roll-upid</a></li>
-                    <li><a href="#">lipud</a></li>
-                    <li><a href="#">plakatid/bännerid</a></li>
-                    <li><a href="#">kleebised</a></li>
-                    <li><a href="#">reklaamrõivad</a></li>
-                    <li><a href="#">trükised</a></li>
+                    <li class="nav-header"><a href="#tootmine">tootmine</a></li>
+                    <li><a href="#lightboxid">lightboxid</a></li>
+                    <li><a href="#turvavaravate_katted">turvaväravate katted</a></li>
+                    <li><a href="#roll-upid">roll-upid</a></li>
+                    <li><a href="#lipud">lipud</a></li>
+                    <li><a href="#plakatid/bannerid">plakatid/bännerid</a></li>
+                    <li><a href="#kleebised">kleebised</a></li>
+                    <li><a href="#reklaamroivad">reklaamrõivad</a></li>
+                    <li><a href="#trukised">trükised</a></li>
                 </ul>
             </div>
            
             <div class="span2">
                 
                 <ul class="nav nav-list">
-                    <li class="nav-header"><a href="#">meediavahendus</a></li>
-                    <li><a href="#">trükimeedia</a></li>
-                    <li><a href="#">välimeedia</a></li>
+                    <li class="nav-header"><a href="#meediavahendus">meediavahendus</a></li>
+                    <li><a href="#trukimeedia">trükimeedia</a></li>
+                    <li><a href="#valimeedia">välimeedia</a></li>
                 </ul>
             </div>
             
