@@ -858,7 +858,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media only screen  and (max-width: 480px) {
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }
