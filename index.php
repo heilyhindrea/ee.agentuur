@@ -14,15 +14,17 @@
         <div id="wrap">
             
             <header>
-                <div id="logo"><h1>agentuur</h1></div>
-  
-                <div id ="lan">
-                    <ul>
-                        <li><a href="#">est</a></li>
-                        <li><a href="#">eng</a></li>
-                    </ul>            
-                 </div>
-            </header>
+                <h1 id="logo">agentuur</h1>
+                
+               
+                <ul id="lan">
+                    <li><a href="#">est</a></li>
+                    <li><a href="#">eng</a></li>
+                </ul>  
+                
+                 
+           </header>
+           <span class="clearfix"></span>
             <div id="content">
                 <img src="http://placehold.it/200x200">
             </div>
