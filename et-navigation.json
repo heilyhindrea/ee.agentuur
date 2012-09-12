@@ -1,0 +1,34 @@
+{
+    
+        "column": [
+        {
+            "header": "pr",
+            "elements":[{"value":"meediasuhted"}, {"value":"pressiteated"}, {"value":"pressiüritused"}]
+        },
+        {
+            "header": "disain",
+            "elements":[{"value":"graafiline disain"}, {"value":"küljendus"}, {"value":"fototöötlus"}]
+        }
+        ,
+        {
+            "header": "tõlked",
+            "elements":[{"value":"kirjalikud tõlked"}, {"value":"suulised järeltõlked"}, {"value":"keelekorrektuur"}]
+        },
+         {
+            "header": "üritused",
+            "elements":[{"value":"vastuvõtud"}, {"value":"banketid"}, {"value":"firmapeod"},{"value":"konverentsid"},{"value":"pressiüritused"},{"value":"koolitused"}]
+        }
+        
+        ,
+         {
+            "header": "tootmine",
+            "elements":[{"value":"lightboxid"}, {"value":"turvaväravate katted"}, {"value":"roll-upid"},{"value":"lipud"},{"value":"plakatid/bännerid"},{"value":"kleebised"},{"value":"reklaamrõivad"},{"value":"trükised"}]
+        }
+        ,
+        {
+            "header": "meediavahendus",
+            "elements":[{"value":"trükimeedia"}, {"value":"välimeedia"}]
+        }
+        ]
+       
+}

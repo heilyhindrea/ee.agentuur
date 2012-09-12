@@ -7,11 +7,28 @@
     
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-jtemplates.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
      <script>
-         $(document).ready(function(){ 
+        $(document).ready(function(){    
             
+            $.getJSON("et-navigation.json", function(json) {
+                    
+                   
+                   $("#navigation").setTemplateElement("navigation-template");
+                   $("#navigation").processTemplate(json);
+                   
+                    other();
+            
+                    
+                    });
+           
+           
+                    
+         });
+         
+         function other(){
             $('#kontakt_helper').click(function() {
                     $('#kontakt_helper').fadeOut('fast');
                     $('#kontakt').fadeIn('slow');
@@ -47,7 +64,9 @@
                         }
                       
             });
-         });
+            
+          
+           }  
            
          
      </script>
@@ -77,6 +96,11 @@
                 
          #navigation {
              padding-top: 1.5%;
+             
+         }
+         
+         #navigation li {
+             cursor: pointer;
          }
          #navigation li, #friends_list {
              list-style: none;
@@ -142,82 +166,9 @@
               </div>
           </div>
       </div>
-    <div id ="navigation" class="container">
-        <div class="row clearfix">
-             <div class="span2">
-                 
-                 <ul class="nav nav-list">
-                        
-                      <li class="nav-header"><a href="#pr">pr</a></li>
-                      <li><a href="#meediasuhted">meediasuhted</a></li>
-                      <li><a href="#pressideated">pressiteated</a></li>
-                      <li><a href="#pressiuritused">pressiüritused</a></li>
-                        
-                </ul>
-             
-            </div>
-            
-            <div class="span2">
-                
-                <ul class="nav nav-list">
-                    <li class="nav-header"><a href="#disain">disain</a></li>
-                    <li class="active"><a href="#graafiline_disain">graafiline disain</a></li>
-                    <li><a href="#kuljendus">küljendus</a></li>
-                    <li><a href="#fototootlus">fototöötlus</a></li>
-                    
-                </ul>
-            </div>
-            
-             <div class="span2">
-                
-                <ul class="nav nav-list">
-                    <li class="nav-header"><a href="#tolked">tõlked</a></li>
-                    <li><a href="#kirjalikud_tolked">kirjalikud tõlked</a></li>
-                    <li><a href="#suulised_jareltolked">suulised järeltõlked</a></li>
-                    <li><a href="#keelekorrelktuur">keelekorrektuur</a></li>
-                </ul>
-            </div>
-           
-             <div class="span2">
-                
-                <ul class="nav nav-list">
-                    <li class="nav-header"><a href="#uritused">üitused</a></li>
-                    <li><a href="#vastuvotud">vastuvõtud</a></li>
-                    <li><a href="#banketid">banketid</a></li>
-                    <li><a href="#firmapeod">firmapeod</a></li>
-                    <li><a href="#konverentsid">konverentsid</a></li>
-                    <li><a href="#pressiuritused">pressiüritused</a></li>
-                    <li><a href="#koolitused">koolitused</a></li>
-                </ul>
-            </div>
-             <div class="span2">
-               
-                <ul class="nav nav-list">
-                    <li class="nav-header"><a href="#tootmine">tootmine</a></li>
-                    <li><a href="#lightboxid">lightboxid</a></li>
-                    <li><a href="#turvavaravate_katted">turvaväravate katted</a></li>
-                    <li><a href="#roll-upid">roll-upid</a></li>
-                    <li><a href="#lipud">lipud</a></li>
-                    <li><a href="#plakatid/bannerid">plakatid/bännerid</a></li>
-                    <li><a href="#kleebised">kleebised</a></li>
-                    <li><a href="#reklaamroivad">reklaamrõivad</a></li>
-                    <li><a href="#trukised">trükised</a></li>
-                </ul>
-            </div>
-           
-            <div class="span2">
-                
-                <ul class="nav nav-list">
-                    <li class="nav-header"><a href="#meediavahendus">meediavahendus</a></li>
-                    <li><a href="#trukimeedia">trükimeedia</a></li>
-                    <li><a href="#valimeedia">välimeedia</a></li>
-                </ul>
-            </div>
-            
-            
-        </div> <!--END ROW -->
-    </div> <!-- END NAVIGATION -->
-           <div id="kontakt" class="row well" style="display:none;">
+    <div id ="navigation" class="container"></div> <!-- END NAVIGATION -->
+    
+    <div id="kontakt" class="row well" style="display:none;">
             <div class="span2">
                 <img src="http://placehold.it/150x150" alt="kontaktinimene" title="Lemme pilt" />
             </div>
@@ -235,7 +186,7 @@
                 </ul>
             </div>
             
-        </div>
+    </div>
     <div id="kontakt_helper" style="background-color: #0077b3 ; color:white; display:inline; position:fixed; top: 30%; left:0;">&nbsp;&nbsp;Kontakt&nbsp;&nbsp;&nbsp;</div>
     <div class="container">
  
@@ -245,14 +196,25 @@
           
     </div>
     </div>
+       <!-- TEMPLATES -->
+    <textarea id="navigation-template" style="display:none;">
+            <div class="row clearfix">  
+
+                {#foreach $T.column as column}        
+                <div class="span2">
+                   <ul class="nav nav-list">
+                        
+                      <li class="nav-header"><a>{$T.column.header}</a></li>
+                      {#foreach $T.column.elements as item}
+                      <li><a>{$T.item.value}</a></li>
+                      {#/for}
+                        
+                    </ul>
+                </div>
+                {#/for}
+                
+             </div>   
+      </textarea>
   </body>
 </html>
 
-<!--<a href="#">trükised</a>
-                 <ul>
-                    <li>visiitkaardid</li>
-                    <li>kinkekaardid</li>
-                    <li>plakatid</li>
-                    <li>kataloogid ja kliendilehed</li>
-                    <li>flaierid ja voldikud</li>
-                 </ul>-->
