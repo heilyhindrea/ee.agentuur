@@ -67,6 +67,22 @@
                       
             });
             
+            
+    $(".navigation-header").hover(function(event){
+        
+        
+        
+        alert($(event.target).parent().attr('id'));
+        
+        var selector= "#"+event.target.parent().panet()+" .navigation-sub";
+        
+        $().css("visibility","visible")
+      
+       
+    }, function(){
+       
+        
+    }); 
           
            }  
            
@@ -201,15 +217,18 @@
             <div class="row clearfix">  
 
                 {#foreach $T.column as column}        
-                <div class="span2 dropdown">
-                   <ul class="nav nav-pills nav-stacked" style="margin:0;">
-                       <a class="dropdown-toggle" data-toggle="dropdown" style="cursor:pointer;">{$T.column.header}&nbsp;<div class="caret"></div></a>  
-                         <ul class="dropdown-menu" >  
-                            {#foreach $T.column.elements as item}
+                <div class="span2">
+                     <ul  class="nav nav-pills nav-stacked ">
+                       <li><a id="{$T.column.header}" class="navigation-header" style="cursor:pointer;" >{$T.column.header}&nbsp;</a> </li> 
+                     
+                   <ul class="nav nav-pills nav-stacked navigation-sub" style="visibility:hidden;">
+                       {#foreach $T.column.elements as item}
+                            
                             <li><a>{$T.item.value}</a></li>
                             {#/for}
-                         </ul>
+                        
                     </ul>
+                       </ul>
                 </div>
                 {#/for}
                 
