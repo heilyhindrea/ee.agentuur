@@ -51,10 +51,27 @@
                 top:30%;
                 left:45%;
                 width: 15%;
+                border: thick solid red;
             } 
             
             .caret{
                 margin-top: 2%;
                 border-top: 4px solid #0077b3;
             }
+            
+            .dim
+{
+			height:100%;
+			width:100%;
+			position:fixed;
+			left:0;
+			top:0;
+			z-index:10000001 !important;
+			background-color:black;
+                        filter: alpha(opacity=70); /* internet explorer */
+                        -khtml-opacity: 0.7;      /* khtml, old safari */
+                        -moz-opacity: 0.7;       /* mozilla, netscape */
+                        opacity: 0.7;           /* fx, safari, opera */
+}
          
+           

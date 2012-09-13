@@ -35,6 +35,7 @@
             $('#kontakt_helper').click(function() {
                     $('#kontakt_helper').fadeOut('fast');
                     $('#kontakt').fadeIn('slow');
+                   // $("body").addClass("dim");
                                         
               
                 
@@ -43,6 +44,7 @@
             $('#kontakt').click(function() {
                     $('#kontakt').fadeOut('slow');
                     $('#kontakt_helper').fadeIn('fast');
+                  //  $("body").removeClass("dim");
             });      
                 
            
@@ -51,7 +53,7 @@
                 $('#navigation .nav li').removeClass('active');
                 
                     var $this = $(this);
-                        if (!$this.hasClass('active')) {
+                    if (!$this.hasClass('active') && !$this.children('a').hasClass('navigation-header')) {
                             $this.addClass('active');
                         }
                       
@@ -67,29 +69,30 @@
                         }
                       
             });
+            
+         
     
-    var eelmine;      
+    var eelmine=null;      
             
     $(".navigation-header").hover(function(event){
         
-             
-        $("#"+event.target.id).parent().parent().children(".navigation-sub").css("display","block");
-        
-       if(eelmine!=event.target.id){eelmine=event.target.id;
-       $("#"+eelmine).parent().parent().children(".navigation-sub").css("display","none");
-   }
+       if(eelmine==null){eelmine=event.target.id} 
        
-      
-       
-    }, function(){
-        
-        if() 
-        
-    }); 
-    
-
+       if(eelmine!=event.target.id){
+           $("#"+eelmine).parent().parent().children(".navigation-sub").css("visibility","hidden");
+           $("#"+event.target.id).parent().parent().children(".navigation-sub").css("visibility","visible");
+            eelmine=event.target.id;
+           
+       }
+       else{
           
-           }  
+          
+           $("#"+eelmine).parent().parent().children(".navigation-sub").css("visibility","visible");
+       }
+       
+   });
+   
+         }
            
          
      </script>
@@ -143,11 +146,9 @@
                 <a href="mailto:#">meedia@magnalabor.ee</a><br>
                 <label>+372 5145369</label>
             </div>
-            <address class="span2">
-                   Magna Labor OÜ, Madara 27, 10612 Tallinn 
-           </address>
+           
             
-            <div class="span7 friends" style="display:none;">
+            <div class="span7 friends" style="display: none;">
                 <label>SÕBRAD</label>
                 <ul id="friends_list">
                     <li><a href="#">Tepmera</a></li>
@@ -159,26 +160,32 @@
     <div id="kontakt_helper" style="background-color: #0077b3 ; color:white; display:inline; position:fixed; top: 30%; left:0;">&nbsp;&nbsp;Kontakt&nbsp;&nbsp;&nbsp;</div>
     <div class="container">
  
-       
+     <address>
+                   Magna Labor OÜ, Madara 27, 10612 Tallinn 
+           </address>   
           
     </div>
     </div>
        <!-- TEMPLATES --> 
-    <textarea id="navigation-template" style="display:none;">
+    <textarea id="navigation-template" style="visibility:hidden;">
             <div class="row clearfix">  
 
                 {#foreach $T.column as column}        
                 <div class="span2">
                      <ul  class="nav nav-pills nav-stacked ">
-                       <li><a id="{$T.column.header}" class="navigation-header" style="cursor:pointer;" >{$T.column.header}&nbsp; <div class="caret"></div></a> </li> 
-                     
-                            <ul class="nav nav-pills nav-stacked navigation-sub" style="display:none;">
+                       <li><a id="{$T.column.header}" class="navigation-header">{$T.column.header}&nbsp; <div class="caret"></div></a></li>
+                       
+                       <ul class="nav nav-pills nav-stacked navigation-sub" style="visibility:hidden;">
                                 {#foreach $T.column.elements as item}
 
                                      <li><a>{$T.item.value}</a></li>
                                      {#/for}
 
-                             </ul>
+                       </ul>
+                       
+                        
+                     
+                            
                        </ul>
                 </div>
                 {#/for}
